@@ -1,6 +1,6 @@
 require "csv"
 require "faker"
-Faker::Config.local = :ja
+Faker::Config.locale = :ja
 
 1000.times do
 User.create!(name: Faker::Name.name, age: rand(0..100))
